@@ -1,6 +1,3 @@
-# Voted_Perceptron
-An implementation of Perceptron and Voted Perceptron algorithms to compare them
-
 # Manuale per l'uso del programma
 
 ## Struttura
