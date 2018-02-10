@@ -1,0 +1,4 @@
+Questa cartella contiene i datasets che verranno poi utilizzati dal programma.
+Il formato consigliato con cui salvare i datasets è .csv, poichè sarà semplice riusare il codice gia scritto.
+Se si vuole utilizzare datasets di altri formati è necessario, ai fini di un corretto funzionamento del programma, 
+modificare del codice.
