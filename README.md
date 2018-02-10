@@ -23,6 +23,14 @@ csv file :
 
                 Datasets che ho scelto dal sito di http://mldata.org/ per testare le prestazini degli algoritmi.
 
+banana.py:
+          
+                file che è volutamente separato dall'esperimento su gli altri datasets, poichè nell'esecuzione 
+                di banana (nome che deriva dal nome del dataset) si tenta anche di visualizzare geometricamente
+                i dati rappresentati, dando una forma anche all'iperpiano di separazione (in questo caso l'iperpiano
+                sarà una retta, e poichè il dataset non è linearmente separabile, questo potrà essere a seguito di ogni
+                test un iperpiano completamente differente)
+                
 ## Funzionamento
 Nella classe principale dove si svolgono tutti i test ( index.py ) vengono inizialmente specificati i file .csv da dove 
 si recuperano i dati. I dati sono quindi suddivisi in "values" e "labels", nonchè punti in R^n dimensioni e classe alla 
