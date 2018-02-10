@@ -73,7 +73,7 @@ Per entrambi i casi vengono mostrate le stesse informazioni:
         indica i valori di "precision, recall, f1-score, support" per entrambe le classi di tipologie.
         
 # Riferimenti
-Ringrazio [UCI](http://archive.ics.uci.edu/ml/index.php) perchè fornisce descrizioni su moltissimi datasets che sono forniti da [mldata](http://mldata.org/), poichè altrimenti non avrei potuto utilizzarne i dati. 
+Ringrazio [UCI](http://archive.ics.uci.edu/ml/index.php) perchè descrive moltissimi datasets che sono forniti da [mldata](http://mldata.org/), rendendo comprensibile il significato dei dati. 
 Ringrazio per avermi reso piu' chiaro il Perceptron ed il Voted Perceptron con esempi, implementazioni, spiegazioni e video i seguenti autori e pagine:
 - [Packt>](https://www.youtube.com/channel/UC3VydBGBl132baPCLeDspMQ)
 - [Bgmee on github](https://github.com/bmgee)
