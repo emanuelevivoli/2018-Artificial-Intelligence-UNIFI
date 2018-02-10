@@ -80,3 +80,4 @@ Ringrazio per avermi reso piu' chiaro il Perceptron ed il Voted Perceptron con e
 - [Jason Brownlee](https://machinelearningmastery.com/about/)
 - [StackOverflow](https://stackoverflow.com/)
 - [Freund & Schapire 1999](https://link.springer.com/content/pdf/10.1023/A:1007662407062.pdf)
+- [Wikipedia](https://en.wikipedia.org/wiki/Perceptron)
