@@ -1,37 +1,44 @@
-# Manuale per l'uso del programma
+# 2018 Artificial Intelligence @ UniFi
 
-## Struttura
+<p align="center">
+    <img src="University_of_Florence.png" alt="logo-UniFi" width="200"/>
+</p>
+
+## Introduction
+This repo contains the code from the "Artificial Intelligence" exam project at University of Florence.
+
+## Structure
 Il programma è strutturato in più file:
 
-perceptron.py : 
+- **perceptron.py** :
 
-                file contenente la classe Perceptron ed i metodi training(X, Y){} e predict(xi){}, 
-                con X array di elementi xi (punto in R^len(xi) dimensioni) e Y array che ne identifica la classe.
+      file contenente la classe Perceptron ed i metodi training(X, Y){} e predict(xi){}, 
+      con X array di elementi xi (punto in R^len(xi) dimensioni) e Y array che ne identifica la classe.
                 
-voted_perceptron.py : 
+- **voted_perceptron.py** : 
 
-                file contenente la classe Voted-Perceptron ed i metodi training(X, Y){} e predict(xi){}, 
-                con X array di elementi xi (punto in R^len(xi) dimensioni) e Y array che ne identifica la classe.
+      file contenente la classe Voted-Perceptron ed i metodi training(X, Y){} e predict(xi){}, 
+      con X array di elementi xi (punto in R^len(xi) dimensioni) e Y array che ne identifica la classe.
 
-index.py :  
+- **index.py** :  
   
-                file dove avviene il procedimento di raccolta dati dai Datasets scaricati, la loro suddivisione 
-                in insiemi Train e Test e la successiva sottomissione dei dati Train e successivamente Test ai 
-                due algoritmi precedentemente citati, come previsto dal metodo di Cross Validation.
+      file dove avviene il procedimento di raccolta dati dai Datasets scaricati, la loro suddivisione 
+      in insiemi Train e Test e la successiva sottomissione dei dati Train e successivamente Test ai 
+      due algoritmi precedentemente citati, come previsto dal metodo di Cross Validation.
 
-csv file : 
+- **csv file**: 
 
-                Datasets che ho scelto dal sito di http://mldata.org/ per testare le prestazini degli algoritmi.
+      Datasets che ho scelto dal sito di http://mldata.org/ per testare le prestazini degli algoritmi.
 
-banana.py:
+- **banana.py**:
           
-                file che è volutamente separato dall'esperimento su gli altri datasets, poichè nell'esecuzione 
-                di banana (nome che deriva dal nome del dataset) si tenta anche di visualizzare geometricamente
-                i dati rappresentati, dando una forma anche all'iperpiano di separazione (in questo caso l'iperpiano
-                sarà una retta, e poichè il dataset non è linearmente separabile, questo potrà essere a seguito di
-                ogni test un iperpiano completamente differente)
-                
-## Funzionamento
+      file che è volutamente separato dall'esperimento su gli altri datasets, poichè nell'esecuzione 
+      di banana (nome che deriva dal nome del dataset) si tenta anche di visualizzare geometricamente
+      i dati rappresentati, dando una forma anche all'iperpiano di separazione (in questo caso l'iperpiano
+      sarà una retta, e poichè il dataset non è linearmente separabile, questo potrà essere a seguito di
+      ogni test un iperpiano completamente differente)
+
+## How it works
 Nella classe principale dove si svolgono tutti i test ( index.py ) vengono inizialmente specificati i file .csv da dove 
 si recuperano i dati. I dati sono quindi suddivisi in "values" e "labels", nonchè punti in R^n dimensioni e classe alla 
 quale il punto appartiene (supporremo solo problemi di classificazioni binaria, dunque classe 1 o -1). 
@@ -50,7 +57,7 @@ di Train e Test.
 Infine sono richiamati i metodi confusion_matrix() , accuracy_score() e classification_report() per dare una panoramica 
 sull'accuratezza con la quale sono stati classificati gli elementi del Test.
 
-## Aggiungere un Datasets
+## Add a Dataset
 E' possibile modificare il programma per aggiungere a piacimento un dataset. Occorre un file .csv contenente i dati, 
 e appositamente situato nella cartella '/csv'. Successivamente si procede a estrarre dal file .csv i rispettivi dati e 
 costruire con questi un array pandas X. Dobbiamo fare ancora un'ultimo passaggio, quello di rimuovere dall'array pandas (X) la
@@ -61,7 +68,7 @@ confusione e l'accuratezza.
 N.B. E' necessario conoscere la struttura del dataset, i nomi dei campi ed il significato dei dati, per un corretto 
 utilizzo del programma.
 
-## Comprendere l'output
+## Understand the output
 L'output è diviso in due componenti: il Test sull'algoritmo Perceptron, ed il test sul Voted Perceptron.
 Per entrambi i casi vengono mostrate le stesse informazioni:
 - Singol Layer accuracy:
@@ -80,7 +87,7 @@ Per entrambi i casi vengono mostrate le stesse informazioni:
 
         indica i valori di "precision, recall, f1-score, support" per entrambe le classi di tipologie.
         
-# Riferimenti
+# References
 Ringrazio [UCI](http://archive.ics.uci.edu/ml/index.php) perchè descrive moltissimi datasets che sono forniti da [mldata](http://mldata.org/), rendendo comprensibile il significato dei dati. 
 Ringrazio per avermi reso piu' chiaro il Perceptron ed il Voted Perceptron con esempi, implementazioni, spiegazioni e video i seguenti autori e pagine:
 - [Packt>](https://www.youtube.com/channel/UC3VydBGBl132baPCLeDspMQ)
